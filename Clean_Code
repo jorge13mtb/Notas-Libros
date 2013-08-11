@@ -116,9 +116,15 @@
 - Utilizando código de terceros:
             - Los "terceros" quieren tener una amplia aplicabilidad mientras que los usuarios quieren enfocarse en sus necesidades específicas.
             - El código de terceros debe poseer una interfaz amigable para poder hacer uso de las funcionalidades que brindan.
+            - Obtener funcionalidades en menos tiempo.
+- Pruebas de Aprendizaje:
+            - Se trata de escribir pruebas para comprender el código de terceros, esto se hace cuando se quiere hacer uso de una nueva biblioteca.
+- Evitar depender del código de terceros, porque nunca se sabe cuando vendrán actualizaciones que podrían traer cambios importantes en la interfaz.
+
+
+----- Capítulo 9: Pruebas Unitarias
+
 - 
-
-
 
 
 ----- Capítulo 10: Clases.
