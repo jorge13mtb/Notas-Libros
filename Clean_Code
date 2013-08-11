@@ -113,7 +113,10 @@
 
 ----- Capítulo 8: Límites (Boundaries)
 
-- En ocaciones se utiliza código de terceros
+- Utilizando código de terceros:
+            - Los "terceros" quieren tener una amplia aplicabilidad mientras que los usuarios quieren enfocarse en sus necesidades específicas.
+            - El código de terceros debe poseer una interfaz amigable para poder hacer uso de las funcionalidades que brindan.
+- 
 
 
 
