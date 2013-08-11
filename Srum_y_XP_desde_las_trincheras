@@ -1,0 +1,39 @@
+
+*****     Scrum y XP desde las Trincheras     *****
+
+- No es una metodología, es un marco de trabajo, no te dice exactamente lo que debes hacer.
+- Backlogs: lista priorizada de requisitos, historias, funcionalidades que el cliente quiera, 
+   descritas usando la terminología del cliente.
+Posee Id, Nombre, Importancia (Número), Estimación Inicial (Puntos), Como probarlo (test en prosa) y notas.
+
+- Planificar el Sprint: Deben estar listos los backlogs, proporciona al equipo de desarrollo información 
+  necesaria para poder trabajar por unas semanas. Además la reunión proporciona.
+     - Una meta (sprint goal)
+     - La lista de miembros y el nivel de dedicación.
+     - Lista de historias incluidas en este sprint (sprint backlog).
+     - La fecha exacta para la presentación del demo del sprint.
+     - Lugar y momento para el scrum diario (daily scrum).
+
+- Debe estar presente el product owner, pues este define el alcance y la importancia de las historias.
+- Tomar en cuenta la calidad, es dada por el product owner e influye en la estimación:
+     - Calidad externa: La percepción del usuario (Interfaz lenta y poco intuitiva es síntoma de baja calidad externa)
+     - Calidad interna: Diseño del sistema, pruebas, legibilidad del código, refactoring.
+- EL tiempo de desarrollo del sprint debe ser corto para tener feedback eficiente, se recomiendan 3 semanas.
+- La meta de Sprint debería responder a la pregunta “¿Por qué hacemos este Sprint en vez de irnos todos de vacaciones? 
+  La meta debería ser algo que no se haya logrado aún.
+- La cantidad de historias en el sprint depende de la duración del mismo, estas son decisiones de los desarrolladores 
+  basados en el historial del equipo, el producto owner puede decidir cuales historias van en este sprint basado en la importancia.
+- Definir el termino "terminado", ya sea todo chequeado o ya instalado.
+- Dividir las historias (entregables) grandes en más pequeñas, y estas en tareas (no-entregables).
+- Las tareas se representan en horas hombre, no días.
+- Mantener al equipo sentados juntos.
+
+- Hacer una retrospectiva después de cada sprint. Indicar que se hizo bien, y que se pudo hacer mejor. 
+  (Mejorar después de cada sprint, y aplicar esto en el siguiente)
+- Combinar Scrum (practicas de organización y gestión) con XP (practicas de programación)
+Aplicar Pair Programming, TDD y tener un estándar de código.
+- Sincronizar los sprints de todos los equipos, facilita el redistribuir los equipos de trabajo, que todos los equipos trabajen 
+  en un mismo objetivo de Sprint creando mejor colaboración, aparte que disminuyen las reuniones de planificación, demos y versiones.
+- Cuando los equipos están separados geográficamente se utilizan recursos como webcams, micrófonos, software para compartir 
+   el escritorio, y todo lo que este al alcance.
+

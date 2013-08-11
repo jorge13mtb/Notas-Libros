@@ -1,0 +1,137 @@
+
+                                             *****     Clean Code     *****
+
+----- Capítulo 1: Introducción
+
+- Siempre va a existir el código, pero este debe de ser limpio, pues el código malo lo único que provoca son pérdidas para las empresas.
+- Entre mas desorden en el código, así mismo disminuye la productividad.
+        - Mantener el código limpio es indispensable en esta industria.
+        - Actitud: El único culpable de hacer código malo es el programador.
+        - Para terminar el producto en la fecha límite es necesario mantener el código limpio.
+        - Crear clean code es un arte, y no hay una serie de pasos específica para llegar a esto.
+        - Debe de ser: agradable a la lectura, simple (evita bugs), directo y entendible.
+        - Básicamente es utilizar buenas practicas de programación.
+- Los programadores somos autores, y habrán personas que leerán, y evaluarán nuestro código.
+- Utilizar al regla de los boys scouts, dejar tan limpio a como se encuentra, y se si se puede dejarlo mas limpio,
+  es decir cada vez que utilicemos un código deberíamos de estar evaluando el mismo.
+
+
+----- Capítulo 2: Nombres significativos
+
+- Un nombre debe responder a: porque existe, que hace y como se utiliza.
+- Evitar nombres que varían poco.
+- Usar nombres que se puedan pronunciar.
+- Utilizar nombres que sean fáciles de buscar en el código.
+- No usar nombres de variable de una sola letra, solo si es en un ciclo y el alcance es pequeño.
+- El nombre de una clase debe ser un sustantivo y nunca un verbo.
+- Los nombres de método deben de ser verbos.
+- Evite usar el mismo nombre para 2 propósitos distintos.
+- Utilizar nombres técnicos y del dominio del problema.
+- Nombres cortos son mejores que los nombres largos, siempre que sean claros.
+
+
+----- Capítulo 3: Funciones.
+
+- Small: Las funciones deben ser pequeñas, y siempre deberían ser mas pequeñas.
+- Las líneas no deben tener más de 150 caracteres y las funciones deben tener mucho menos de 20 lineas.
+- Dentro de if, while o for, solo debe de ir una linea larga, que puede ser una llamada a una función.
+- Las funciones no deben de tener estructuras anidadas.
+- Do one thing: Las funciones solo deben "hacer una cosa".
+- Nivel de abstracción: Dentro de las funciones se debe mantener el mismo nivel de abstracción.
+- The Stepdown Rule: Poder leer el código de arriba hacia abajo, pasando de un alto a un bajo nivel de abstracción.
+- Nombres descriptivos: Usar nombres que describan lo que hace la función, no hay que temer a hacer nombres largos.
+- Argumentos (Parámetros): Lo ideal es que las funciones no tengan argumentos.
+- Solo se debe usar un argumento cuando se consulta u opera sobre el.
+- Nunca utilizar argumentos bandera (argumentos booleanos)
+- Entre mas argumentos haya, es más difícil entender la función.
+- Reducir el número de argumentos, utilizando una clase que envuelva estos datos.
+- Cuando son muchos argumentos y son tratados de la misma manera, se pueden utilizar listas.
+- Evitar los argumentos de salida. Si se debe cambiar el estado de algo, debe cambiar el estado de su objeto propietario.
+- Command query separation: Las funciones deben hacer o responder a algo, no ambas.
+- Exceptions: Es mejor usar exceptions que retornar códigos de error.
+- Los bloques de código dentro de un try & catch deberían de ser funciones (porque hacen una cosa).
+- Don’t repeat yourself: Eliminar la duplicación de código, pues esto puede generar pulgas.
+- Structured programming: Cada función debe tener una entrada y una salida (No aplica en funciones pequeñas).
+
+
+----- Cap 4: Comentarios     -----
+
+- El uso de los comentarios son considerados como fallas o fracasos (failures)
+- Nuestro código debería ser tan legible que no necesitamos del uso de los comentarios
+- Uno de los principales problemas es que cuando se hacen cambios en el código no se hacen en los comentarios
+- Los comentarios no deben ser un medio para escribir "bad code" en vez de escribir comentarios, trate de escribir "clean code"
+- Hay buenos o aceptables comentarios, como lo son los legales o donde se indica el autor, además de los que informan a otros 
+  programdores de algún proceso que se tiene que llevar antes para poder usar esta sección del código.
+- Comentarios "TODO" o "por hacer" sirven como recordatorio de tareas que se deben hacer en el futuro.
+- Evitar usar comentarios obvios o que no agregam nada, además de que estos pueden ser engañosos
+- Antes se colocaban comentarios al inicio del documento que indicaban cada vez que se modificaba el mismo, esto se eliminó con 
+  el uso de las herramientas para el control de versiones.
+- Si se tiene que poner un comentario, que este sea descriptivo pero breve.
+
+
+----- Cap 5: Formato     -----
+
+- Se debe establecer un formato y todo el equipo lo debe de aplicar.
+- Tomar en cuenta:
+          - Tamaño vertical: cuantas lineas por archivo o por clase
+          - Si recorremos la clase habia abajo, más bajo nivel debemos de encontrar.
+          - Utilizar lineas en blanco para separar bloques (funciones o metodos)
+          - Si una función llama a otra, estas deben estar cerca; la que llama encima de la llamada.
+          - Preferiblemente no utilizar lineas muy largas.
+          - Utilizar la identación del código, pues agrega orden, estructura y legibilidad.
+
+
+----- Capítulo 6: Objetos y Estructuras de Datos
+
+- Mantener las variables privadas para que nadie dependa de ellas y poder mantener la libertad de cambiarlas para adaptarnos a las necesidades.
+- Abstracción de Datos: Se basa en el ocultación de los datos, para que estos no puedan ser manipulados 
+  desde otros entes que no conozcan el funcionamiento interno y la implementación.
+- No se quiere expresar los detalles de nuestros datos, mas bien se quiere expresar nuestros datos en términos abstractos.
+- Anti-simetría entre objetos y estructuras de datos: Los objetos ocultan sus datos y exponen sus funciones mientras las 
+  estructuras de datos exponen sus datos y no tienen funciones significativas.
+- La Ley de Demeter: un módulo no debe saber acerca de las entrañas de los objetos que manipula.
+  Esto significa que un objeto no debe exponer su estructura interna.
+          - Choque de trenes (Train Wrecks): Tratar de evitar objeto.metodo.metodo.metodo y separar cada llamada a un método en una variable.
+          - Híbridos: Evitar completamente los híbridos entre Objetos y estructuras de datos pues son lo peor de ambos mundos 
+            e indican un diseño confuso ignorando la necesidad de proteger las variables o funciones.
+- Objetos de transferencia de datos (DTO): Es una clase con variables públicas y sin funciones (estructura de datos),
+  sirven para transferir o comunicar datos entre clases.
+          - Active Record: Es una forma especial de DTO, poseen las variables públicas, pero suelen poseer métodos de navegación como save y find. 
+            Normalmente son traducciones directas de las tablas de las BD.
+- Objetos exponen comportamiento y ocultan datos y las estructuras de datos exponen los datos y tienen un comportamiento no significativo.
+
+
+----- Capítulo 7: Manejo de Errores
+
+- Utilizar excepciones (cada lenguaje tiene las propias) en vez de códigos de retorno (inventados por el programador)
+- Implementar el uso de "try" and "catch" para manejar los errores.
+- Se debe proporcionar contexto en las excepciones, es decir enviar mensajes de error informativos junto con las excepciones, para indicar al 
+  usuario cual fue el error que sucedió.
+- Siempre hay que separar la lógica del negocio de la gestión de errores.
+- No utilizar "nul" o "nil" como valor de retorno.
+
+
+----- Capítulo 8: Límites (Boundaries)
+
+- En ocaciones se utiliza código de terceros
+
+
+
+
+----- Capítulo 10: Clases.
+
+- Class organization: Variables: Constantes estáticas públicas, estáticas privadas, de instancia privadas y públicas.
+- Encapsulación: Las variables deben de ser privadas.
+- Classes should be Small: Las clases deben ser pequeñas y con una responsabilidad.
+- Los buenos sistemas se componen de muchas clases pequeñas y no pocas grandes.
+- La clase se debería poder describir en 25 palabras sin usar "si", "y", "o" "pero".
+- The Single responsibility principle: Las clases deben tener una única responsabilidad.
+- Se basa en la organización; saber donde está y que hace cada clase, y para facilitar el mantenimiento en el futuro.
+- Cohesión: Existe cohesión si los métodos utilizan las variables de la clase.
+- Una alta cohesión es si hay una alta co-dependencia entre variables y métodos (trabajan como un todo).
+- Maintaining cohesion results in many small classes: Al aumentar la cohesión de la clase, se crean mas clases.
+- Organizing for change: En un sistema limpio se organizan las clases para reducir el riesgo al cambio.
+- Cuando se incorporen nuevas funcionalidades se debe ampliar el sistema y no modificar el código existente.
+
+
+
