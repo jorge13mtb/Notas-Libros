@@ -124,7 +124,20 @@
 
 ----- Capítulo 9: Pruebas Unitarias
 
+- Utilizando la metodología Test Driven Development
+- Tres pilares:
+            - No se puede escribir el código de producción hasta que haya escrito una prueba unitaria que falle.
+            - Usted no puede escribir más de una prueba unitaria que esta fallando, hasta que las anteriores pasen.
+            - Usted no puede escribir más código de producción que lo que se necesita para pasar las pruebas.
+- Las pruebas y el código de producción se escriben juntos, las pruebas con unos pocos segundos de ventaja sobre el código de producción.
+- Al igual que el código las pruebas deberían de ser "Clean Code", pues el código de pruebas es igual de importante que el de producción.
+- Las pruebas deben ser muy legibles (claras y simples), tal vez más que el mismo código.
+- Cada test debe tener un y único assert.
+- Tener un concepto único (individual) por prueba, logrando independencia de las pruebas.
 - 
+
+
+------- pag 163
 
 
 ----- Capítulo 10: Clases.
