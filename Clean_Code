@@ -134,13 +134,18 @@
 - Las pruebas deben ser muy legibles (claras y simples), tal vez más que el mismo código.
 - Cada test debe tener un y único assert.
 - Tener un concepto único (individual) por prueba, logrando independencia de las pruebas.
-- 
+- Las pruebas se basan en los principios F.I.R.S.T
+            - Rápidas (Fast): Las pruebas deben ejecutarse rápidamente, para poderlas ejecutar muchas veces y encontrar los errores.
+            - Independiente (Independent): Las pruebas no deben depender de otras y así poderlas ejecutar en el orden que se desee.
+            - Repetible (Repeatable): Las pruebas deben ser repetibles en cualquier entorno; producción, pruebas, o en su laptop sin internet.
+            - Autovalidante (Self-Validating): Las pruebas deben dar una respuesta binaria, o pasan o no. Y el programador no tendría que hacer
+                                               otro proceso o tarea para saber el resultado de la prueba.
+            - Oportuno (Timely): Las pruebas se tienen que escribir en el tiempo oportuno, justo antes de código de producción que hace que estas
+                                 pruebas pasen.
+- Si deja que las pruebas se "pudran" su código también lo hará.
 
 
-------- pag 163
-
-
------ Capítulo 10: Clases.
+----- Capítulo 10: Clases
 
 - Class organization: Variables: Constantes estáticas públicas, estáticas privadas, de instancia privadas y públicas.
 - Encapsulación: Las variables deben de ser privadas.
@@ -156,4 +161,4 @@
 - Cuando se incorporen nuevas funcionalidades se debe ampliar el sistema y no modificar el código existente.
 
 
-
+----- Capítulo 11: Sistemas
