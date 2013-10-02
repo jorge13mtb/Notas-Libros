@@ -163,8 +163,14 @@
 
 ----- Capítulo 11: Sistemas
 
+- Debemos separar la lógica de otros sectores, pues estas responsabilidades hace que estemos violando el principo de Single Responsability.
+- Podemos utilizar:
+    - Separar el "main": Se trata de mover todos los aspectos de construccion (nuevos objetos) al main, relegándole la función de creación
+      de objetos que necesita el sistema, asi diseñar el resto del sistmema asumiendos que los objetos han sido creados correctamente.
+    - Factories: Utilizar un abstract factory para la creación responsable de objetos.
+    - Inyección de dependencia: Tratar de que el objeto no tenga la responsabilidad de crear otros objetos él solo, se pasa a un ente con autoridad.
+- Scaling Up (Escalando): Los sistemas se contruyen escalando, es necesia la adaptación ágil de los simientos (mas grande ó pequeño) según las necesidades.
 - 
-
 
 
 
