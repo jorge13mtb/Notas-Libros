@@ -170,8 +170,8 @@
     - Factories: Utilizar un abstract factory para la creación responsable de objetos.
     - Inyección de dependencia: Tratar de que el objeto no tenga la responsabilidad de crear otros objetos él solo, se pasa a un ente con autoridad.
 - Scaling Up (Escalando): Los sistemas se contruyen escalando, es necesia la adaptación ágil de los simientos (mas grande ó pequeño) según las necesidades.
-- 
-
+- Los sistemas deben ser modulados, además una persona no puede tomar todas las decisiones.
+- Si se trabaja por módulos nunca olvide utilizar la "cosa" mas simple que le permita trabajar.
 
 
 
