@@ -174,30 +174,16 @@
 - Si se trabaja por módulos nunca olvide utilizar la "cosa" mas simple que le permita trabajar.
 
 
+----- Capítulo 12: Concurrencia
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+- Es importante crear un buen diseño de los algoritmos para programas concurrentes.
+- Uno de los mayores inconvenientes de la concurrencia es que se pueden generar resultados incorrectos.
+- Para la correcta implementación se utiliza:
+    - Single Responsability Principle: Solo debe existir una razón para cambiar. Se debe mantener el código de concurrencia separado del demás código.
+    - Se debe limitar el acceso a los datos que son normalmente compartidos.
+    - Evitar compartir los datos, para esto se crearían copias, pero hay que tomar en cuenta los recursos utilizados para crear estas copias.
+    - Los hilos deben ser lo mas indenpendientes posible (sin compartir datos) 
+- El código de hilos utilizados deben de ser testeables. Y corridos en diversas plataformas y Sistemas Operativos.
+- Los hilos deben ser lo más pequeño posible.
 
 
