@@ -174,7 +174,18 @@
 - Si se trabaja por módulos nunca olvide utilizar la "cosa" mas simple que le permita trabajar.
 
 
------ Capítulo 12: Concurrencia
+----- Capítulo 12: Emergence
+
+- Ejecute todas las pruebas: El sistema debe actuar como se debería de hacerlo. El escribir pruebas conducen a un mejor diseño.
+- Refactoring: Después de que nuestras pruebas pasen, es necesario limpiar nuestro código y que luzca genial. Que las pruebas estén pasando garantiza que no estamos
+               cambiando el comportamiento del sistema.
+- No duplicación: La duplicación representa trabajo y riesgo adicional, además de una complejidad innecesario, por lo que hay que evitarla.
+- Ser expresivo: Cuanto más claro sea el código generamos, más fácil se les va a hacer a las personas en el futuro entender el mismo. 
+                 Así se reduce el costo de mantenimiento. Para esto es necesario aplicar todo lo aprendido sobre clean code.
+- Crear la cantidad mínima posible de clases y métodos.
+
+
+----- Capítulo 13: Concurrencia
 
 - Es importante crear un buen diseño de los algoritmos para programas concurrentes.
 - Uno de los mayores inconvenientes de la concurrencia es que se pueden generar resultados incorrectos.
